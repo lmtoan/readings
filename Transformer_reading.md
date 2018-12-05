@@ -26,7 +26,7 @@ of the encoder network account for the left and right context of the input sente
 * Also at time step $i$, we can predict the translated word by feeding the $f(s_{i-1}, EMB_{y_{i-1}}, c_i)$ to a softmax distribution
 * The cost for each output word is the negative log of the probability given to the correct word translation: $-log t_i [y_i]$
 
-![](attention.png)
+![](attention.PNG)
 
 Algorithm
 ---
@@ -40,7 +40,7 @@ The $H H^T$ is sort of like the covariance-variance matrix computation. "The res
 * Ability of encode the long-range dependencies in the network. This is especially for translating long sequences where in the traditional recurrent model, the forward and backward signals have to traverse the network. Self-attention units shorten the paths "between any combination of positions in the input and output sequences"
 * Self-attention units can be analyzed to decode how "individual attention heads learn to perform different tasks" and yield more interpretable models
 
-![](transformer.png)
+![](transformer.PNG)
 
 Evaluation & Future Work
 ---
